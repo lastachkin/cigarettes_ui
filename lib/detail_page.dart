@@ -28,17 +28,46 @@ class CigaretteDetail extends StatelessWidget {
       ),
 
       body: ListView(children: [
-        Hero(
-            tag: assetPath,
-            child: Image.asset(assetPath,
-                height: 150.0, width: 100.0, fit: BoxFit.contain)),
+
+        Container(
+          child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+            Column(
+              children: <Widget>[
+                Container(
+                    padding: EdgeInsets.only(left: 30),
+                    child: Icon(Icons.assignment, color: Colors.blue)
+                ),
+                Container(
+                    padding: EdgeInsets.only(left: 30),
+                    child: Icon(Icons.assignment_turned_in, color: Colors.amber)
+                ),
+                Container(
+                    padding: EdgeInsets.only(left: 30),
+                    child: Icon(Icons.assessment, color: Colors.purple)
+                ),
+              ],
+            ),
+            Column(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 52),
+                    child: Hero(
+                        tag: assetPath,
+                        child: Image.asset(assetPath,
+                            height: 300.0, width: 200.0, fit: BoxFit.contain)),
+                ),
+              ],
+            ),
+          ]),
+        ),
 
         Container(//slider icons
           child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
             Column(
               children: <Widget>[
                 Container(
-                    padding: EdgeInsets.only(left: 187,top: 15),
+                    padding: EdgeInsets.only(left: 187),
+
                     child: Icon(Icons.adjust, color: Colors.white, size: 10.0)
                 ),
               ],
@@ -46,7 +75,8 @@ class CigaretteDetail extends StatelessWidget {
             Column(
               children: <Widget>[
                 Container(
-                    padding: EdgeInsets.only(left: 5, top: 15),
+                    padding: EdgeInsets.only(left: 5),
+
                     child: Icon(Icons.panorama_fish_eye, color: Colors.white, size: 10.0)
                 ),
               ],
@@ -54,16 +84,17 @@ class CigaretteDetail extends StatelessWidget {
             Column(
               children: <Widget>[
                 Container(
-                    padding: EdgeInsets.only(left: 5,top: 15),
+                    padding: EdgeInsets.only(left: 5),
+
                     child: Icon(Icons.panorama_fish_eye, color: Colors.white, size: 10.0)
                 ),
               ],
             ),
           ]),
-
         ),
 
-        SizedBox(height: 20.0),
+        SizedBox(height:20.0),
+        
         Container(
           width: double.infinity,
           decoration: BoxDecoration(

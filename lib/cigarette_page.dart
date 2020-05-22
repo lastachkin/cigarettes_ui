@@ -48,7 +48,16 @@ class CigarettePage extends StatelessWidget {
           child: Container(
             height: 150.0,
             width: double.infinity,
-            color: Colors.white,
+            //color: Colors.white,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 2.0)
+                ]
+            ),
             child: Row(
               children: <Widget>[
                 Container(
@@ -56,7 +65,8 @@ class CigarettePage extends StatelessWidget {
                   height: 150.0,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(imgPath), fit: BoxFit.cover)),
+                          image: AssetImage(imgPath), fit: BoxFit.cover)
+                  ),
                 ),
                 SizedBox(width: 20.0),
                 Column(
@@ -97,6 +107,7 @@ class CigarettePage extends StatelessWidget {
                           height: 40.0,
                           width: 50.0,
                           color: Colors.white,
+
                           child: Center(
                             child: Text(
                               price,
