@@ -24,9 +24,7 @@ class CigarettePage extends StatelessWidget {
                   _buildCard('TANCE', '\$5.99', 'graphics/2.png',
                       true, false, context),
                   _buildCard('NOVO 2 KIT', '\$7.99',
-                      'graphics/2.png', false, true, context),
-                  _buildCard('EGO AIO', '\$9.99', 'graphics/2.png',
-                      false, false, context)
+                      'graphics/2.png', false, true, context)
                 ],
               )),
           SizedBox(height: 15.0)
@@ -48,7 +46,6 @@ class CigarettePage extends StatelessWidget {
           child: Container(
             height: 150.0,
             width: double.infinity,
-            //color: Colors.white,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
@@ -85,12 +82,12 @@ class CigarettePage extends StatelessWidget {
 
                           child: Center(
                               child:
-                              Icon(Icons.star_half, color: Colors.black)),
+                              Icon(Icons.star, color: Colors.black)),
                         ),
                         Container(
                           child: Center(
                               child:
-                              Icon(Icons.star_half, color: Colors.black)),
+                              Icon(Icons.star, color: Colors.black)),
                         ),
                         Container(
                           child: Center(
@@ -123,17 +120,17 @@ class CigarettePage extends StatelessWidget {
                           padding: EdgeInsets.only(left: 40),
                           child: Center(
                               child:
-                              Icon(Icons.crop_square, color: Colors.black)),
+                              Icon(Icons.assignment, color: Colors.purple)),
                         ),
                         Container(
                           child: Center(
                               child:
-                              Icon(Icons.crop_square, color: Colors.black)),
+                              Icon(Icons.assignment_turned_in, color: Colors.amber)),
                         ),
                         Container(
                           child: Center(
                               child:
-                              Icon(Icons.crop_square, color: Colors.black)),
+                              Icon(Icons.assessment, color: Colors.lightBlue)),
                         ),
                         Container(
                           child: Center(

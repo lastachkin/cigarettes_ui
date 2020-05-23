@@ -101,10 +101,8 @@ class _MyHomePageState extends State<MyHomePage>
             height: MediaQuery.of(context).size.height+30.0 ,
             width: double.infinity,
             child: TabBarView(
-              controller: _tabController,
+              controller: new TabController(length: 1, vsync: this),
               children: <Widget>[
-                CigarettePage(),
-                CigarettePage(),
                 CigarettePage(),
               ],
             ),

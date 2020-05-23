@@ -94,7 +94,7 @@ class CigaretteDetail extends StatelessWidget {
         ),
 
         SizedBox(height:20.0),
-        
+
         Container(
           width: double.infinity,
           decoration: BoxDecoration(
@@ -220,9 +220,6 @@ class CigaretteDetail extends StatelessWidget {
             ),
           ]),
         ),
-
-
-
 
         Container(
           padding: EdgeInsets.only(top: 20),
